@@ -5,7 +5,9 @@
 
   <div class="py-8">
     <h3 class="group-hover:text-blue-800 text-xl font-bold transition-colors duration-300">
-      {{ $job->title }}
+      <a href="{{ $job->url }}" target="_blank">
+        {{ $job->title }}
+      </a>
     </h3>
     <p class="tex-sm mt-4">{{ $job->salary }}</p>
   </div>
